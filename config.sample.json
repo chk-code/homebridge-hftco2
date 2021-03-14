@@ -1,0 +1,23 @@
+{
+    "bridge": {
+      ...
+    },
+    "accessories": [
+      ...
+    ],
+    "platforms": [
+        {
+            "name": "CO2AmpelPlatform",
+            "platform": "CO2AmpelPlatform",
+            "co2sensor": [
+              {
+                "name": "Büro",
+                "json_url": "http://10.1.1.155/data.json",
+                "update_interval": 60,
+                "co2warnlevel": 800,
+                "sensorID": "ESP1409e2"
+              }
+            ]
+        }
+    ]
+}

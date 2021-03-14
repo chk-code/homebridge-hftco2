@@ -1,0 +1,90 @@
+{
+  "pluginAlias": "hftco2",
+  "pluginType": "platform",
+  "singular": true,
+  "customUi": false,
+  "footerDisplay": "For documentation please see [GitHub repository](https://github.com/chk-code/homebridge-hftco2)",
+  "schema": {
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "default": "CO2AmpelPlatform",
+      "description": "Describing the basic settings, naming for logging."
+    },
+    "co2sensor": {
+      "type": "array",
+      "items": {
+        "title": "CO2Ampel",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "required": true,
+            "description": "Set the name of the CO2 Ampel for display in the Home app."
+          },
+          "json_url": {
+            "title": "JSON URL",
+            "type": "string",
+            "required": true,
+            "description": "URL of the data.json file of the CO2 Ampel."
+          },
+          "update_interval": {
+            "title": "Update Interval",
+            "type": "integer",
+            "required": false,
+            "default": 60,
+            "description": "Update interval in seconds (Default 60s)."
+          },
+          "co2warnlevel": {
+            "title": "CO2 Warning Level",
+            "type": "integer",
+            "required": false,
+            "default": 800,
+            "description": "Set the warning level of CO2 in the room in ppm (Default 800 ppm)."
+          },
+          "sensorID": {
+            "title": "Sensor ID",
+            "type": "string",
+            "required": false,
+            "description": "Set the sensor ID of the CO2 Ampel (from Web Interface)."
+          }
+        }
+      }
+  }
+},
+"layout": [
+  "name",
+  {
+    "type": "section",
+    "title": "CO2 Ampel",
+    "expandable": true,
+    "expanded": true,
+    "orderable": false,
+    "items": [
+      {
+        "key": "co2sensor",
+          "type": "array",
+          "orderable": false,
+          "buttonText": "Add CO2 Ampel",
+          "items": [
+            "co2sensor[].name",
+            "co2sensor[].json_url",
+            "co2sensor[].update_interval",
+            {
+              "key": "co2sensor[]",
+              "type": "section",
+              "title": "Branding",
+              "expandable": true,
+              "expanded": false,
+              "orderable": false,
+              "items": [
+                "co2sensor[].sensorID"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
