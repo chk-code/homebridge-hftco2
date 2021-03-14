@@ -1,7 +1,7 @@
 {
     "displayName": "CO2 Ampel",
     "name": "homebridge-hftco2",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Chris (https://github.com/chk-code/homebridge-hftco2)",
     "description": "Homebridge module for the DIY HFT Stuttgart CO2 Ampel.",
     "license": "MIT",
@@ -27,7 +27,9 @@
         "homekit",
         "hft stuttgart"
     ],
-    "devDependencies": {},
+    "devDependencies": {
+        "homebridge": "^1.3.1"
+    },
     "dependencies": {
         "fakegato-history": "^0.6.1",
         "moment": "^2.29.1"
