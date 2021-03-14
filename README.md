@@ -20,13 +20,13 @@ First follow the instructions for [HomeBridge](http://github.com/nfarina/homebri
 
 Install `homebridge-hftco2` using `(sudo) npm install -g homebridge-hftco2`.
 
-Configure your CO2 Ampel in the `homebridge` settings file. See [config.sample.json](config.sample.json). All settings except `update_interval_seconds` (defaults to 120 seconds) and `history` (defaults to persisting to memory) are required.
+Configure your CO2 Ampel in the `homebridge` settings file. See [config.sample.json](config.sample.json). All settings except 'sensorID', `update_interval` (default 60 seconds) and `co2warnlevel` (default 800 ppm) are required.
 
 See the documentation of the [fakegato-history](https://github.com/simont77/fakegato-history/blob/master/README.md#history-persistence) module for the list of supported options.
 
 ### The sensor & homebridge in your (home) network
 
-To do this set `json_data` to
+To do this set `json_url` to
 
 `http://<YOUR_CO2AMPEL_IP-ADDRESS>//data.json`
 
