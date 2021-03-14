@@ -1,6 +1,6 @@
 # homebridge-hftco2
 
-![Tavis CI build status](https://travis-ci.com/github/chk-code/homebridge-hftco2.svg?branch=main)
+![Tavis CI build status](https://travis-ci.com/chk-code/homebridge-hftco2.svg?branch=main&status=passed)
 
 [HomeBridge](http://github.com/nfarina/homebridge) module for the DIY [HFT Stuttgart](https://www.hft-stuttgart.de/) [CO2 Ampel](https://www.hft-stuttgart.de/forschung/news/co2-ampel-lueften-gegen-covid-19).
 
