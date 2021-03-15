@@ -1,5 +1,8 @@
 # ------------- Defaults ------------- #
 
+# helper files
+help
+
 # gitHub actions
 .github
 

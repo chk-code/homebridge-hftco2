@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "hftco2",
+  "pluginAlias": "CO2AmpelPlatform",
   "pluginType": "platform",
   "singular": true,
   "customUi": false,
@@ -71,10 +71,11 @@
             "co2sensor[].name",
             "co2sensor[].json_url",
             "co2sensor[].update_interval",
+            "co2sensor[].co2warnlevel",
             {
               "key": "co2sensor[]",
               "type": "section",
-              "title": "Branding",
+              "title": "Sensor ID",
               "expandable": true,
               "expanded": false,
               "orderable": false,
