@@ -2,6 +2,7 @@
 
 # helper files
 help
+.travis.yml
 
 # gitHub actions
 .github
