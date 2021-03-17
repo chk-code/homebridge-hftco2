@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.2 - 2021-03-17
+- [FIX] Bug in platform.js
+
 ## v1.0.2 - 2021-03-15
 - [FIX] npm package issues
 
