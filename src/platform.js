@@ -1,13 +1,12 @@
 'use strict';
 
 const Logger = require('./logger.js');
-const packageVer = require('./package.json');
+const packageVer = require('../package.json');
 
 //Accessories
 const CO2AmpelAccessory = require('./CO2AmpelAccessory.js')
 
-//Custom Types
-
+//CONSTANTS
 const PLUGIN_NAME = 'homebridge-hftco2';
 const PLATFORM_NAME = 'CO2AmpelPlatform';
 
